@@ -1,0 +1,165 @@
+/* Container for the entire chatbot */
+.chatbot-container {
+    width: 90vw; /* Reduced width (90% of the viewport width) */
+    max-width: 500px; /* Maximum width for larger screens */
+    height: 80vh; /* Reduced height (80% of the viewport height) */
+    max-height: 700px; /* Maximum height for larger screens */
+    position: fixed;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% to center properly */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000; /* Ensure it is displayed above other elements */
+  }
+  
+  /* Chat window that displays messages */
+  .chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    box-sizing: border-box;
+  }
+  
+  /* Style for individual messages */
+  .message {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 14px;
+  }
+  
+  /* Style for user messages */
+  .user-message {
+    background-color: #e6f7ff;
+    align-self: flex-end;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  /* Style for bot messages */
+  .bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  /* Time and sender info */
+  .time-stamp {
+    font-size: 10px;
+    color: #aaa;
+  }
+  
+  /* Typing indicator */
+  .bot-typing-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Chat input area */
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Input field style */
+  .chat-input input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* Send button style */
+  .chat-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Quick replies layout */
+  .quick-replies {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  
+  /* Style for each quick reply button */
+  .quick-reply-button {
+    padding: 6px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .quick-reply-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Quantity input layout */
+  .quantity-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+  }
+  
+  /* Quantity input style */
+  .quantity-input input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  /* Place Order button style */
+  .quantity-input button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .quantity-input button:hover {
+    background-color: #218838;
+  }
+  
